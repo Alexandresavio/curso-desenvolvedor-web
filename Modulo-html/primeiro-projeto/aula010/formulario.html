@@ -10,6 +10,7 @@
     <form name="signup" method="post" action="https://www.meusite.com.br/signup" target="_blank">
         Login:<br>
         <input type="text" name="login"><br>
+
         Senha:<br>
         <input type="password" name="senha"><br><br>
         <input type="submit" value="Logar">
@@ -17,15 +18,19 @@
         <h2>Cadastre-se</h2>
         Login:<br>
         <input type="text" name="login"><br>
+
         sexo:<br>
         <input type="radio" name="sexo" value="masc">Masculino<br>
         <input type="radio" name="sexo" value="fem">Feminino<br><br>
+
         Idade:<br>
-        <input type="number"><br><br>
+        <input type="number" min="0" max="100"><br><br>
+
         Interesses:<br>
-        <input type="checkbox" name="">futebol<br>
-        <input type="checkbox" name="">cursos<br>
-        <input type="checkbox" name="">moda<br><br>
+        <input type="checkbox" name="Interesse" value="fut">futebol<br>
+        <input type="checkbox" name="Interesse" value="curso">cursos<br>
+        <input type="checkbox" name="Interesse" value="moda">moda<br><br>
+
         Estado<br>
         <select name="estado">
             <option value="sp">SP</option>
@@ -34,6 +39,9 @@
             <option value="rj">RJ</option>
         </select>
         <br><br>
+        Envie seu curriculo<br>
+        <input type="file"><br><br>
+
         Observações:<br>
         <textarea>Digite aqui</textarea><br>
         <input type="submit" value="cadastrar">
