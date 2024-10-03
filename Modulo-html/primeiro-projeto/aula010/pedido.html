@@ -8,7 +8,7 @@
 <body>
     <h1>Você selecionou: Pizza de calabresa</h1>
     <p>Quais opcionais você deseja?</p>
-    <form method="post">
+    <form method="get">
         <input type="checkbox" name="opciona[]" value="queijo"> + queijo<br>
         <input type="checkbox" name="opciona[]" value="calabresa"> + calabresa<br>
         <input type="checkbox" name="opciona[]" value="cebola"> + cebola<br>
@@ -22,8 +22,20 @@
         <input type="radio" name="bebida" value="suco">Suco<br>
         <input type="radio" name="bebida" value="Refrigerante">Refrigerante<br>
         <input type="radio" name="bebida" value="agua">Água<br>
-        <input type="radio" name="bebida" value="nenhum">Nenhum<br>
-        
+        <input type="radio" name="bebida" value="nenhum">Nenhum<br><br>
+
+        Estado<br>
+        <select name="estado">
+            <option value="sp">SP</option>
+            <option value="mg">MG</option>
+            <option value="rs">RS</option>
+            <option value="rj">RJ</option>
+        </select><br><br>
+
+        <label>Mensagem:</label><br>
+        <textarea rows="10" cols="50" name="msg"></textarea><br><br>
+
+        <input type="reset" value="Limpar">
         <input type="submit" name="enviar-pedido" value="enviar pedido">
     </form>
 </body>
